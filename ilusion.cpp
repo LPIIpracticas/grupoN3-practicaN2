@@ -8,7 +8,7 @@ void Ilusion::inicio()
     cin >> nroRazones;
     razon = new string[nroRazones];
     cin.ignore();
-    for (int i = 0; i < nroRazones;)
+    for (int i = 0; i < nroRazones;i++)
     {
         cout << "Ingrese la razon: ";
         getline(cin, razon[i]);
@@ -22,7 +22,7 @@ void Ilusion::final()
 {
     fechaFin.ingresar();
     intensidad = 0;
-    delete razon[];
+    delete []razon;
 }
 void Ilusion::aumentar()
 {
@@ -32,7 +32,7 @@ void Ilusion::disminuir()
 {
     intensidad--;
 }
-void Ilusion::decepción()
+void Ilusion::decepcion()
 {
     cout << "quiero morir..." << endl;
 }

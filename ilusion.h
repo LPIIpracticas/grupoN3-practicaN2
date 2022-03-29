@@ -3,6 +3,8 @@
 
 #include <string>
 using namespace std;
+
+#include "fecha.h"
 class Ilusion
 {
 private:
@@ -16,6 +18,6 @@ public:
     void final();
     void aumentar();
     void disminuir();
-    void decepción();
+    void decepcion();
     void confiar();
 };
