@@ -7,6 +7,13 @@ using namespace std;
 
 #include "producto.h"
 #include "producto.cpp"
+void calcularValorProducto(Producto *ptrProducto)
+{
+    system("clear");
+    cout << "Precio total del producto " << ptrProducto->getNombre() << ": ";
+    ptrProducto->valorProducto();
+    system("pause");
+}
 void funcionCambiarPrecioProducto(Producto *ptrProducto)
 {
     float p = 0;
@@ -94,7 +101,7 @@ void ejecutaMetodos(int opc, Producto *ptrProducto)
         break;
     case 6:
         ptrProducto->imprimir();
-        case 7:
-        ptrProducto->valorProducto();
+    case 7:
+        calcularValorProducto(ptrProducto);
     }
 }

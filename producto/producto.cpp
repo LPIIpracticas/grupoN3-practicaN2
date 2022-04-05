@@ -49,7 +49,7 @@ void Producto::disminuirStock(int c)
 }
 float Producto::calcularIGV()
 {
-    return precio + 0.18;
+    return precio * 0.18;
 }
 void Producto::cambiarPrecio(float p)
 {
